@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<style>
+.container {
+    display: grid;    
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 50px 350px 50px;
+}
+header {
+    display: flex;
+    align-items: center;
+    grid-column: span 12;
+    background-color: yellow;
+}
+
+header > div:nth-child(3) {
+    margin-left: auto;
+    
+}
+
+
+
+aside {
+    grid-column: span 2;
+    background-color: blue;
+}
+main {
+    grid-column: span 10;
+    background-color: crimson;
+}
+footer {
+    grid-column: span 12;
+    background-color: yellow;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <header><div>Home</div><div>Login</div><div>Sign</div></header>
+  <aside>MENU</aside>
+  <main>CONTENT</main>
+  <footer>FOOTER</footer>
+</div>
+
+</body>
+</html>
