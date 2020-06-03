@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<style>
+body {
+  background-color: #444;
+  color: $fffff8;
+  font-size: 10px;
+
+}
+
+.container {
+  display: grid;
+  width:100%;
+  margin: auto;
+  grid-template-columns: 35vw 35vw;
+  grid-gap: 25px;
+  grid-template-areas:
+  "top top"
+  "bottomLeft bottomRight"
+  "bottom bottom";
+  border: 2px solid rgb(247, 182, 96);
+  /* big reveal! */
+ justify-content: center;
+  height: 700px;
+
+  
+}
+
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid red;
+  padding: 30px;
+  background-color: blue;
+} 
+
+#one {
+   grid-area: top;
+
+}
+
+#two {
+  grid-area: bottomLeft;
+  align-self: center;
+
+}
+
+#three {
+  grid-area: bottomRight;
+  align-self: center;
+
+}
+
+#four {
+  grid-area: bottom;
+  align-self: flex-end;
+  width: 100%;
+
+}
+#mspo {
+
+ 
+}
+</style>
+
+</head>
+<body>
+<div class="container">
+  <div class="box" id="one"><span style="background-color:green;margin-right: 10px;">Box 1</span><span style="background-color:green;">Box 2</span></div>
+  <div class="box" id="two"><span style="background-color:green;margin-right: 10px;">Box 1</span><span style="background-color:green;">Box 2</span></div>
+  <div class="box" id="three"><span style="background-color:green;margin-right: 10px;">Box 1</span><span style="background-color:green;" id="mspo">Box 2a</span></div>
+  <div class="box" id="four"><span style="background-color:green;margin-right: 10px;">Box 1</span><span style="background-color:green;">Box 2a</span></div>
+</div>
+
+</body>
