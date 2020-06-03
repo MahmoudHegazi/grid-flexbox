@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<style>
+body {
+  background-color: #444;
+  color: white;
+  font-size: 27px;
+  
+
+}
+
+.container {
+  display: grid;
+  width:100%;
+  margin: auto;
+  grid-template-columns: 64% 35vw;
+
+  grid-template-areas:
+  "top top"
+  "bottomLeft bottomRight"
+  "bottom bottom";
+  border: 2px solid rgb(247, 182, 96);
+  /* big reveal! */
+ justify-content: center;
+  height: 700px;
+
+  
+}
+
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 30px;
+  background-color: blue;
+} 
+
+#one {
+   grid-area: top;
+   background-color: crimson;
+
+}
+
+#two {
+  grid-area: bottomLeft;
+  align-self: center;
+  flex-direction: column;
+  height: 100%;
+  background-color: green;
+}
+
+#three {
+  grid-area: bottomRight;
+  align-self: center;
+  height: 100%;
+  background-color: blue;
+
+}
+
+#four {
+  grid-area: bottom;
+
+  background-color: crimson;
+  width: 100%;
+
+}
+#mspo {
+
+ 
+}
+</style>
+
+</head>
+<body>
+<div class="container">
+  <div class="box" id="one">Header</div>
+  <div class="box" id="two">Main</div>
+  <div class="box" id="three">Aside</div>
+  <div class="box" id="four">Footer</div>
+</div>
+
+</body>
