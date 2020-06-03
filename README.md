@@ -28,3 +28,26 @@ grid and flex box example
 }
 
 ```
+
+
+second:
+
+```html
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 8px;
+}
+.child {
+  background: orange;
+  text-align: center;
+  padding: 25px;
+  
+  display: flex;
+  justify-content: space-between;
+}
+.last-row {
+  grid-column: 1 / 3;
+}
+
+```
