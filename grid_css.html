@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<style>
+body {
+  background-color: #444;
+  color: $fffff8;
+  font-size: 10px;
+
+}
+
+.container {
+  display: grid;
+  width:80vw;
+  margin: auto;
+  grid-template-columns: 35vw 35vw;
+  grid-gap: 25px;
+  grid-template-areas:
+  "top top"
+  "bottomLeft bottomRight";
+  border: 2px solid rgb(247, 182, 96);
+  /* big reveal! */
+ justify-content: center;
+
+  
+}
+
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid red;
+  padding: 15px;
+  background-color: blue;
+} 
+
+#one {
+   grid-area: top;
+
+}
+
+#two {
+  grid-area: bottomLeft;
+}
+
+#three {
+  grid-area: bottomRight;
+}
+</style>
+
+</head>
+<body>
+<div class="container">
+  <div class="box" id="one">Box 1</div>
+  <div class="box" id="two">Box 2</div>
+  <div class="box" id="three">Box 3</div>
+</div>
+
+</body>
