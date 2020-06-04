@@ -54,3 +54,37 @@ second:
 }
 
 ```
+
+
+## Important example (Helpful)
+
+It don't care xd top header but it must be in grid-area
+
+```html
+  grid-template: [header-left] "xd xd" 30px [header-right]
+                 [main-left]   "nav  main" 1fr  [main-right]
+                 [footer-left] "foot  foot" 30px [footer-right]
+                 / 120px 1fr;
+ /* try change foot foot to nav foot */
+header {
+  background-color: lime;
+  grid-area: xd;
+}
+
+nav {
+  background-color: lightblue;
+  grid-area: nav;
+}
+
+main {
+  background-color: yellow;
+  grid-area: main;
+}
+
+footer {
+  background-color: red;
+  grid-area: foot;  
+}
+
+
+```
