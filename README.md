@@ -1,3 +1,6 @@
+# first thing:
+Grid = layout first while Flexbox = text-first or content first
+
 # grid-flexbox
 grid and flex box example 
 
