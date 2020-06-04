@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#page {
+  display: grid;
+  width: 100%;
+  height: 200px;
+  grid-template: [header-left] "head head" 30px [header-right]
+                 [main-left]   "nav  main" 1fr  [main-right]
+                 [footer-left] "nav  foot" 30px [footer-right]
+                 / 120px 1fr;
+}
+
+header {
+  background-color: lime;
+  grid-area: head;
+}
+
+nav {
+  background-color: lightblue;
+  grid-area: nav;
+}
+
+main {
+  background-color: yellow;
+  grid-area: main;
+}
+
+footer {
+  background-color: red;
+  grid-area: foot;
+}
+</style>
+</head>
+<body>
+
+<h1>The grid-auto-columns Property</h1>
+<p>Use the <em>grid-auto-columns</em> property to set a default size (width) for all columns.</p>
+<p>Set the size to 50 pixels per column:</p>
+
+<section id="page">
+  <header style="background-color:green;">Header</header>
+  <nav style="background-color:blue;">Navigation</nav>
+  <main style="background-color:red;">Main area</main>
+  <footer style="background-color:gold;">Footer</footer>
+</section>
+
+<p><strong>Note:</strong> The grid-template-columns property overrides this property.</p>
+
+</body>
+</html>
