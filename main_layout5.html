@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<style>
+.container {
+   height: 100%;
+   text-align: center;
+   display: grid;
+   font-size: 40px;
+   grid-template: repeat(3, 40px auto 40px)/repeat(12,1fr);
+   grid-gap: 2px;
+  
+}
+
+.header {
+   grid-column:2/-1;
+   background-color: aqua;
+}
+
+.content {
+   justify-content: center;
+   background-color: green;
+   grid-column: 2/-1;
+
+}
+
+.menu {
+  grid-row: 1/4;
+     background-color: blue;
+}
+
+.footer {
+   grid-column: 2/-1;
+      background-color: yellow;
+}
+
+</style>
+</head>
+<body>
+
+
+
+
+
+<div class="container ">
+
+<div class="header">Home</div>
+<div class="content">content</div>
+<div class="menu">menu</div>
+<div class="footer">footer</div>
+</div>
+</body>
+</html>
