@@ -109,5 +109,15 @@ grid-template-rows: repeat(auto, 100px);
   }
 ```
 
+
+```css
+.item-a {
+  grid-column-start: 2;
+  grid-column-end: five;
+  grid-row-start: row1-start;
+  grid-row-end: 3;
+}
+```
+
 # Help ful links:
 https://css-tricks.com/snippets/css/complete-guide-grid/
