@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Exercise 1</title>
+    <meta
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+      name="viewport"
+    />
+
+  <style>
+  .container{
+    /* Step 1: Set display to grid */
+      display:grid;
+   /* Step 2: setup rows amd columns */
+      grid-template-columns: 100px 100px 100px;
+      grid-template-rows: 300px 500px 100px;
+     
+      grid-template-areas: 
+        "top top top top top top top top"
+        "asd main main main main main main main"
+        "ft ft ft ft ft ft ft ft";
+     
+      
+
+  }
+  .box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 -5px;    
+    }
+    #one{ 
+    /* set grid-area here: row start/column start/ row end/ column end */
+
+    grid-area: top;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('https://lafirist.com/wp-content/uploads/2019/03/%D8%B4%D8%B1%D8%A7%D8%A6%D8%AD-%D8%A7%D9%84%D8%B9%D9%85%D9%84%D8%A7%D8%A1-780x405.jpg');
+      height: 300px;
+
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: white;
+      
+
+  }
+    
+    #main {
+    grid-area: main;
+    background-color: #ccddcc;
+    background-size: cover;
+    background-repeat: no-repeat;     
+    }
+    
+    #aside {
+    grid-area: asd;
+    background-color: rgb(10 150 150);
+    color: white;
+    }
+    
+    #footer {
+    grid-area: ft;
+    background-color: black;
+    color: white;
+    }
+    .frameimage {
+        width: 150px;
+        height: 150px;
+        border: 2px solid gold;
+        margin: 0 10px;
+    }
+    #image1 {
+        order: 1;
+      
+        background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSM5MNEzYWf2VMKAaayXZlq9JNGGAjwDWn5Q27JwlWwCjQpX0Fb&usqp=CAU');
+      background-size: cover;
+
+    }
+    
+    #image2 {
+        order: 2;
+              background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSM5MNEzYWf2VMKAaayXZlq9JNGGAjwDWn5Q27JwlWwCjQpX0Fb&usqp=CAU');
+      background-size: cover;
+    }
+    
+    #image3 {
+        order: 3;
+              background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSM5MNEzYWf2VMKAaayXZlq9JNGGAjwDWn5Q27JwlWwCjQpX0Fb&usqp=CAU');
+      background-size: cover;
+    }    
+  </style>
+  </head>
+
+  <body>
+  <div class = "container">
+    <div id="one" class="box"></div>
+    <div id="main" class="box">
+      <div id="image1" class="frameimage"></div>
+      <div id="image2" class="frameimage"></div>
+      <div id="image3" class="frameimage"></div>
+    </div>
+    <div id="aside" class="box"> aside</div>
+    <div id="footer" class="box"> footer</div>
+  </div>
+  </body>
+</html>
