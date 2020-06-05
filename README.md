@@ -88,3 +88,11 @@ footer {
 
 
 ```
+
+```html
+
+grid-template-rows: repeat(12, 100px);
+or
+grid-template-rows: repeat(auto, 100px);
+
+```
