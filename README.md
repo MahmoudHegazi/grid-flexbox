@@ -14,6 +14,19 @@ grid and flex box example
 <img src="layout3.PNG">
 
 
+# top notes:
+
+*  repeat(4, fr) (Create 4 same size columns or row you can use pixels "4 = numbers of elemnts you had"
+*  grid-auto-rows: minmax(100px, auto)(Faceback timline or Unkown rows) it replace reapte don't forget:
+minmax (100px, auto) = the min size = 100px the max size = auto (the size of content even if 9999px)
+
+* use with grid-template-rows: 1fr 1fr (better)
+
+
+# final
+if we have 12 cells so if we used grid-row: 1 / 3; it will have 4 cells from our 12
+if we use it like this 2/4  it will have 6 
+
 ```html
 
 .layout {
