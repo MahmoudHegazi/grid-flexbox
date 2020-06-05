@@ -25,7 +25,7 @@ minmax (100px, auto) = the min size = 100px the max size = auto (the size of con
 
 # final
 if we have 12 cells so if we used grid-row: 1 / 3; it will have 4 cells from our 12
-if we use it like this 2/4  it will have 6 
+if we use it like this 2/4  it will have 6  order come after grid-row
 
 ```html
 
