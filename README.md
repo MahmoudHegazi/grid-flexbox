@@ -96,3 +96,7 @@ or
 grid-template-rows: repeat(auto, 100px);
 
 ```
+
+
+Help ful links:
+https://css-tricks.com/snippets/css/complete-guide-grid/
