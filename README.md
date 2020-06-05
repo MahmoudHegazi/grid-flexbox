@@ -97,6 +97,17 @@ grid-template-rows: repeat(auto, 100px);
 
 ```
 
+# Grid Gift:
 
-Help ful links:
+```css
+    grid-template: 
+
+      "hd hd hd hd" 300px
+      "sd main main main" 300px
+      "ft ft ft ft" 100px 
+      /  100px auto 200px;
+  }
+```
+
+# Help ful links:
 https://css-tricks.com/snippets/css/complete-guide-grid/
