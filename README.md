@@ -3,6 +3,8 @@
 * grid-template-columns: fr   = ( responsive)
 * grid-template-columns: px = (unresponsive)
 
+
+
 ```html
 
 <!DOCTYPE html>
@@ -108,6 +110,8 @@ grid and flex box example
 # layout3:
 <img src="layout3.PNG">
 
+# layout4:
+<img src="w31.PNG">
 
 # top notes:
 
@@ -226,6 +230,9 @@ grid-template-rows: repeat(auto, 100px);
   grid-row-end: 3;
 }
 ```
+
+
+
 
 # Help ful links:
 https://css-tricks.com/snippets/css/complete-guide-grid/
