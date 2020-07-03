@@ -1,5 +1,100 @@
 # first thing:
 Grid = layout first while Flexbox = text-first or content first
+grid-template-columns: fr   = ( responsive)
+grid-template-columns: px = (unresponsive)
+
+```html
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<style>
+
+body {
+ margin: 0;
+}
+.container {
+  display: grid;
+  grid-template-rows: 50px 500px 50px;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas: 
+  "hd hd hd hd"
+  "sd main main main"
+  "ft ft ft ft";  
+}
+
+.box {
+  background-color: green;
+
+}
+
+.header {
+  background-color: #00ffcc;
+  grid-area: hd;
+  display: flex;
+  border-bottom: 2px solid gray; 
+  
+}
+
+.header div {
+   width: 200px;   
+}
+
+
+#right {
+  margin-left: auto;
+}
+
+.side {
+ background-color: gray;
+ grid-area: sd;
+ pdding: 10px;
+ display: flex;
+ flex-direction: column;
+ flex-wrap: wrap;
+ font-size: 40px;
+ align-items: center;
+ justify-content: center;
+}
+
+.main {
+  grid-area: main;
+  font-size: 40px;
+}
+
+.footer {
+  grid-area: ft;
+  background-color:  #00ffcc;
+}
+
+a {
+  text-decoration: none;
+  color: black;  
+  font-size: 20px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<div class="header box">
+<a href="#"><div>Home</div></a>
+<a href="#"><div>Search</div></a>
+<a href="#"  id="right"><div>login</div></a>
+</div>
+
+<div class="side box"><div>helloworldhelloworldhelrlde</div><div>aside</div></div>
+<div class="main box">Main </div>
+<div class="footer box">Footer </div>
+</div>
+
+</body>
+</html>
+
+```
+
 
 # grid-flexbox
 grid and flex box example 
