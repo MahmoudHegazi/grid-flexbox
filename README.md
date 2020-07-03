@@ -1,7 +1,7 @@
 # first thing:
-Grid = layout first while Flexbox = text-first or content first
-grid-template-columns: fr   = ( responsive)
-grid-template-columns: px = (unresponsive)
+* Grid = layout first while Flexbox = text-first or content first
+* grid-template-columns: fr   = ( responsive)
+* grid-template-columns: px = (unresponsive)
 
 ```html
 
