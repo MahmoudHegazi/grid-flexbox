@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+<style>
+.container{
+
+display: grid;
+
+grid-template-columns:   2fr 6fr;
+
+grid-template-rows: 0.25fr 3fr 0.25fr;
+
+height: 100vh;
+
+width: 100%;
+
+grid-template-areas: 
+
+"hd hd hd hd hd hd"
+
+"men con con con con con"
+
+"ft ft ft ft ft ft"
+
+
+
+;
+}
+
+.header{
+
+display: flex;
+
+flex-direction: row;
+
+flex-wrap: wrap;
+
+align-items: stretch;
+
+background-color: hotpink;
+
+grid-area: hd;
+
+font-weight: bold;
+}
+
+.box{
+
+width: 20%;
+
+height: 20%;
+
+padding: 1em;
+}
+
+.one{
+
+ color: black;
+
+ text-align: left;
+}
+
+.tow{
+
+color: black;
+
+text-align: left;
+}
+
+.three{
+
+color: black;
+
+flex-grow: 1;
+
+text-align: right;
+
+flex-basis: 0px;
+
+margin-left: auto;
+}
+
+.main{
+
+display: flex;
+
+flex-direction: column;
+
+flex-wrap: wrap;
+
+align-items: center;
+
+justify-content: center;
+}
+
+#men{
+
+color: blue;
+
+background-color: gray;
+
+grid-area: men;
+
+text-align: center;
+}
+
+#con{
+
+color: blue;
+
+background-color:white;
+
+grid-area: con;
+
+text-align: center;
+}
+
+.ft{
+
+width: 20%;
+
+height: 20%;
+
+padding: 1em;
+
+color: black;
+
+text-align: left;
+}
+
+footer{
+
+display: flex;
+
+flex-direction: row;
+
+flex-wrap: wrap;
+
+align-items: stretch;
+
+background-color: hotpink;
+
+grid-area: ft;
+
+font-weight: bold;
+}
+
+/*ol{
+
+display: flex;
+
+flex-direction: column;
+
+flex-wrap: wrap;
+
+align-items: flex-start;
+
+justify-content: center;
+
+width: 0.01px;
+}
+
+*/
+ul {
+  list-style-type: none;
+}
+
+
+</style>
+</head>
+
+<body>
+
+ <div class="container">  
+
+    <header class="header">
+
+        <section class="box one">home</section>
+
+        <section class="box tow">search</section>
+
+        <section class="box three">log out </section>
+
+    </header>
+
+    
+
+        <section class="main" id="men" >
+
+            <ul>
+
+                <li>css intro</li>
+
+                <li>css Home</li>
+
+            </ul>
+
+        </section>
+
+        <section class="main" id="con">contaaaaaaaaaaaaaaaaent</section>
+
+     
+
+    <footer>
+
+      <section class="ft">footer</section> 
+
+    </footer>  
+
+ </div>   
+
+</body>
