@@ -146,6 +146,15 @@ a {
 </html>
 
 ```
+(content) will only take a tiny fixed width of the page and the rest will go for (sidebar).
+
+because you reserved only three columns for the page width, so the first three columns you insert will be divided equally (each column will take 1fr) through the page width and a tiny fixed width will be reserved for any extra column you insert.
+
+Try to increase columns to 4
+grid-template-columns: repeat(4,1fr);
+
+You will see that (content) width will share the same 1fr width as (sidebar).
+
 
 
 # grid-flexbox
