@@ -5,6 +5,56 @@
 
 
 
+
+```html
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<style>
+.container {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: 250px 500px;
+grid-template-areas:
+"hd hd hd hd hd hd hd hd"
+"sd sd main main main main main main"
+"ft ft ft ft ft ft ft ft";
+}
+.header{
+grid-area:hd;
+}
+.content{
+grid-area:main;
+}
+.bar{
+grid-area:sd;
+}
+.footer{
+grid-area:ft;
+}
+
+
+.box {
+  border: 1px solid gold;
+  
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+<div class="header box">header</div>
+<div class="bar box">side</div>
+<div class="content box">main</div>
+<div class="footer box">footer</div>
+</div>
+
+</body>
+</html>
+
+```
 ```html
 
 <!DOCTYPE html>
