@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="mystyle.css">
+
+<style>
+body{ background-color: crimson;
+color:white;
+font-size:27px; 
+} 
+.container { 
+display:grid;
+width:800px;
+grid-template-columns:300px 300px;
+grid-gap:10px;
+grid-template-rows:35vh 35vh;
+grid-template-areas:
+"top top"
+"bottomleft bottomright"; 
+border:5px solid aqua; } .box {display:flex; border:5px solid red; padding:10px; align-items: center; }
+#one{ grid-area:top;background-color: green;}
+
+#two {grid-area:bottomleft;background-color: gold;}
+
+#three {grid-area:bottomright;background-color: gold;}
+</style>
+
+
+</head>
+<body>
+<div class="container">
+<div class="box" id="one" > box1</div>
+    <div class="box" id="two"> box2</div>
+<div class="box" id="three" > box3</div>
+</div>
+</body>
+</html>
