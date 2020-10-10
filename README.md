@@ -1,3 +1,6 @@
+Grid samples:
+1.  https://www.w3schools.com/code/tryit.asp?filename=GJKJRUEGK7D8
+
 # first thing:
 * Grid = layout first while Flexbox = text-first or content first
 * grid-template-columns: fr   = ( responsive)
